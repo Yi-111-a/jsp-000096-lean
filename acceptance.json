@@ -1,0 +1,21 @@
+{
+  "jsp_id": "JSP-000096",
+  "catalog_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md",
+  "original_question_en": "Which minimal graphs prevent Ramsey numbers from growing linearly with the number of edges? Characterize these obstructions.",
+  "required_theorems": [
+    "jsp_000096_main"
+  ],
+  "mathematical_area": "Graph theory / Ramsey theory",
+  "definition_used": "G is Ramsey size linear if there is c > 0 with r(G,H) <= c * e(H) for every graph H with no isolated vertices (Erdos-Faudree-Rousseau-Schelp 1993). A minimal Ramsey obstruction is a non-RSL graph all of whose proper subgraphs are RSL.",
+  "references": [
+    "EFRS93 P. Erdos, R. J. Faudree, C. C. Rousseau, R. H. Schelp, Ramsey size linear graphs, Combin. Probab. Comput. 2 (1993) 389-399, doi:10.1017/s096354830000078x",
+    "Wi24 Y. Wigderson, Infinitely many minimally non-Ramsey size-linear graphs, arXiv:2409.05931 (2024)"
+  ],
+  "lean_files": [
+    "lean/JSPProblem/RamseySizeLinear.lean",
+    "lean/JSPProblem/MinimalObstruction.lean"
+  ],
+  "headline_theorem": "jsp_000096_main",
+  "headline_theorem_proved": true,
+  "notes": "jsp_000096_main has two parts. Part 1 (the characterisation of the obstructions asked for by the catalog) is proved unconditionally. Part 2 (Wigderson's infinitude theorem) is proved on the two explicit analytic hypotheses of his proof: (a) acyclic graphs are Ramsey size linear, (b) graphs of arbitrarily large girth that are not Ramsey size linear. See ACCEPTANCE.md and discovery policy.json blockers for the exact missing lemmas."
+}
